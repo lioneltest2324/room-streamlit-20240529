@@ -3,7 +3,8 @@ import streamlit as st
 st.set_page_config(layout="wide")
 show_pages(
     [
-        Page("room-sku.py", "测试")
+        Page("room-sku-7day.py", "7日"),
+        Page("room-sku-3day.py", "3日")
 
     ]
 )
