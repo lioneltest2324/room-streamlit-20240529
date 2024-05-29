@@ -229,7 +229,7 @@ else:
         unique_cate3
     )
 param_options = st.multiselect(
-    '选择三级类目',
+    '选择数据维度',
     ['impression','click','cost','ads value','conversions','CTR','ads ROI']
 )
 result_string = '|'.join(param_options)
