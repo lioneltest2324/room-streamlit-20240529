@@ -52,6 +52,11 @@ column_config = {}
 column_config['imagelink'] = st.column_config.ImageColumn(
     width="small"
             )
+column_config['CTR'] = st.column_config.NumberColumn(
+    format='%.2f%%',  # 显示为百分比
+    min_value=0,
+    max_value=1,
+            )
 
 merged_df_left = merge_summary_df.filter(regex='SKU|SPU|scenes|imagelink|product_type_1|product_type_2|product_type_3|impression|click|cost|ads value|conversions|CPC|CTR|ads ROI')
 
