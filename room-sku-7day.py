@@ -44,13 +44,13 @@ yesterday = (current_date - timedelta(days=1)).strftime('%Y-%m-%d')
 seven_date = (current_date - timedelta(days=7)).strftime('%Y-%m-%d')
 
 eight_date = (current_date - timedelta(days=8)).strftime('%Y-%m-%d')
-fifteen_date = (current_date - timedelta(days=15)).strftime('%Y-%m-%d')
+fifteen_date = (current_date - timedelta(days=14)).strftime('%Y-%m-%d')
 
-sixteen_date = (current_date - timedelta(days=16)).strftime('%Y-%m-%d')
-twentytwo_date = (current_date - timedelta(days=22)).strftime('%Y-%m-%d')
+sixteen_date = (current_date - timedelta(days=15)).strftime('%Y-%m-%d')
+twentytwo_date = (current_date - timedelta(days=21)).strftime('%Y-%m-%d')
 
-twentythree_date = (current_date - timedelta(days=23)).strftime('%Y-%m-%d')
-twentynine_date = (current_date - timedelta(days=29)).strftime('%Y-%m-%d')
+twentythree_date = (current_date - timedelta(days=22)).strftime('%Y-%m-%d')
+twentynine_date = (current_date - timedelta(days=28)).strftime('%Y-%m-%d')
 
 
 column_config = {}
