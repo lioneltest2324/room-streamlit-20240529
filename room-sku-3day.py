@@ -39,7 +39,8 @@ ads_daily['Date'] = pd.to_datetime(ads_daily['Date'])
 # ads_daily_filtered_date_range_df = create_date_filtered_df(ads_daily, 'Date', selected_range)
 # st.dataframe(ads_daily_filtered_date_range_df,width=1600, height=200)
 
-current_date = datetime.now()
+# current_date = datetime.now()
+current_date = datetime(2024,8,1,12,30,55)
 yesterday = (current_date - timedelta(days=1)).strftime('%Y-%m-%d')
 three_date = (current_date - timedelta(days=3)).strftime('%Y-%m-%d')
 
