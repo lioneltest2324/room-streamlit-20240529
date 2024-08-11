@@ -66,11 +66,9 @@ def out_date_range_data(df,DATE_COLUMNS,DATE_RANGE_LABEL):
     min_date = datetime.strptime(min_date, "%Y-%m-%d")
     max_date = df[DATE_COLUMNS].max()
     max_date = datetime.strptime(max_date, "%Y-%m-%d")
-    default_start_date = datetime.today() - timedelta(days=14)
-    default_end_date = datetime.today() - timedelta(days=7)
     selected_range = st.date_input(
         DATE_RANGE_LABEL,
-        [default_start_date, default_end_date],
+        [min_date, max_date],
         min_value=min_date,
         max_value=max_date
     )
